@@ -10,11 +10,11 @@
 #
 # *[GNU]: GNU's Not Unix
 #
-# [1]: //angelogladding.com/code/src
-# [2]: //angelogladding.com
-# [3]: //gnu.org
-# [4]: //gnu.org/licenses/agpl
-# [5]: //fsf.org
+# [1]: https://angelogladding.com/code/src
+# [2]: https://angelogladding.com
+# [3]: https://gnu.org
+# [4]: https://gnu.org/licenses/agpl
+# [5]: https://fsf.org
 
 """Tools for metamodern software development."""
 
