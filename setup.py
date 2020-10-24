@@ -20,9 +20,18 @@
 
 from setuptools import setup
 
-setup(requires=["flake8", "flake8-docstring", "ghdiff", "gnupg", "ipython",
-                "pep8-naming", "pss", "pytest", "pytest_cov", "pytest_pep8",
-                "sh"],
-      provides={"kt.extensions": ["sloc = src:count_sloc"],
-                "term.apps": ["src = src.__main__:main"]},
-      discover=__file__)
+from pkg.discover import discover
+from pkg.install import add
+
+requirements = ["keyring", "pyxdg", "wheel", "flake8", "flake8-docstring",
+                "ghdiff", "gnupg", "ipython", "pep8-naming", "pss",
+                "pytest", "pytest_cov", "pytest_pep8", "sh"]
+add(*requirements)
+
+setup(requires=requirements + ["pip"],
+      provides={"distutils.setup_keywords": ["discover = pkg:auto_discover"],
+                "setuptools.file_finders": ["git = pkg:get_repo_files"],
+                "kt.extensions": ["sloc = src:count_sloc"],
+                "term.apps": ["pkg = pkg.__main__:main",
+                              "src = src.__main__:main"]},
+      **discover(__file__))
