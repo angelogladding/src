@@ -10,7 +10,7 @@
 #
 # *[GNU]: GNU's Not Unix
 #
-# [1]: https://angelogladding.com/code/src
+# [1]: https://github.com/angelogladding/src
 # [2]: https://angelogladding.com
 # [3]: https://gnu.org
 # [4]: https://gnu.org/licenses/agpl
