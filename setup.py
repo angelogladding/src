@@ -26,7 +26,7 @@ from pkg.install import add
 requirements = ["keyring", "pyxdg", "wheel"]
 add(*requirements)
 
-setup(requires=requirements + ["pip", "flake8", "flake8_docstring", "ghdiff",
+setup(requires=requirements + ["pip", "flake8", "flake8_docstrings", "ghdiff",
                                "gnupg", "ipython", "pep8_naming", "pss",
                                "pytest", "pytest_cov", "pytest_pep8", "sh"],
       provides={"distutils.setup_keywords": ["discover = pkg:auto_discover"],
