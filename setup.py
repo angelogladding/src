@@ -27,7 +27,7 @@ requirements = ["keyring", "pyxdg", "wheel"]
 add(*requirements)
 
 setup(requires=requirements + ["pip", "flake8", "flake8_docstring", "ghdiff",
-                               "gnupg", "ipython", "pep8-naming", "pss",
+                               "gnupg", "ipython", "pep8_naming", "pss",
                                "pytest", "pytest_cov", "pytest_pep8", "sh"],
       provides={"distutils.setup_keywords": ["discover = pkg:auto_discover"],
                 "setuptools.file_finders": ["git = pkg:get_repo_files"],
