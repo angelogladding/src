@@ -53,7 +53,7 @@ def discover(pkgdir: str) -> dict:
 
     comments = inspect.getcomments(setup_mod)
     name = re.match(r"^# \[`(.*?)`\]\[1\]", comments).groups()[0]
-    description = "TODO: use setup.py docstring"
+    description = "TODO use setup.py docstring"
     # XXX re.match(r"^# \[`.*`\]\[1\]: (.*)", comments).groups()[0]
     license_match = re.search(r"%\[([A-Za-z ]+)\]", comments)
     try:
